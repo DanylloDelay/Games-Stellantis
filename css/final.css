@@ -1,0 +1,99 @@
+
+.login-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh;
+    min-height: 100vh;
+    background-image: url('../images/image002.png');
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+.login_header{
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5px;
+    
+}
+
+.login_header img {
+    width: 100px;
+}
+
+.login_header h1 {
+
+    color:rgb(255, 255, 255);
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.login_input {
+
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 15px;
+    max-width: 300px;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+}
+
+
+
+.final_button {
+
+    background-color: rgba(255, 166, 22, 0.8);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    max-width: 300px;
+    width: 100%;
+}
+
+.gridCabeçalhoLogin {
+
+    background-image: url('../images/TrofeuSouParte.png');
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    background-size: cover;
+    background-size: 200px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+
+}   
+
+.tempo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #333;
+    color:rgb(255, 255, 255);
+    font-size: 1em;
+    padding: 15px 18px;
+    border-radius: 10px;
+    border: 3px solid white;
+    margin: 15px auto;
+}
+
+.tempo span {
+    font-size: 1em;
+    
+
+
+}
