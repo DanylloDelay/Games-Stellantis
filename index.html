@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" hrfer="./css/login.css">
+
+    <script defer src="./js/login.js"></script>
+
+    <title>Jogo da Memória | Login</title>
+</head>
+<body>
+    
+
+  <main> 
+   
+
+    
+    <form class="login-form">  
+
+    <div class="login_header">
+        <div class="gridCabeçalhoLogin"></div>
+        <h1>Jogo da Memória</h1>
+    </div>
+
+        <input type="text", placeholder="Name" class="login_input">
+        <button type="submit" class="login_button" disabled>Play</button>
+
+        
+    </form> 
+
+    <audio src="./musicas/Music01.mp3" controls autoplay></audio>
+
+ <main> 
+
+    <div class="cursor"></div>
+    <div class="cursor-lazy"></div>
+
+    <script>
+        "use strict";
+        (function(){
+            var cursor = document.querySelector('.cursor');
+            var cursorLazy = document.querySelector('.cursor-lazy');
+            var links = document.querySelectorAll('a');
+
+            var editCursor = function editCursor (event){
+                cursor.style.left = event.clientX + 'px';
+                cursor.style.top = event.clientY + 'px';
+                cursorLazy.style.left = event.clientX + 'px';
+                cursorLazy.style.top = event.clientY + 'px';
+            };
+            window.addEventListener('mousemove',editCursor);
+        })();
+        
+    </script>
+ 
+</body>
+</html>
