@@ -1,0 +1,158 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2em;
+    width: 800px;
+    padding: 30px;
+    margin: 0 0 30px;
+    border-radius: 8px;
+    border: 2.5px solid rgb(255, 255, 255, 0.8);
+
+}
+
+.cursor {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background-image: url('../images/BolaCursor.cur');
+    justify-content: center;
+    background-size: cover;
+    background-size: 45px;
+    background-repeat: no-repeat;
+    animation: rotateCursor 1.5s linear infinite;
+    top:0;
+    left: 0;
+    transition: 0.3s ease-out;
+}
+
+@keyframes rotateCursor { to {
+    transform: rotate(360deg);
+}}
+
+.cursor-lazy {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: translate3d(-5%, -5%, 0);
+    background-image: url('../images/Circulo.cur');
+    justify-content: center;
+    background-size: cover;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-out;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0px auto;
+    border-radius: 10px;
+    border: 0px solid rgb(255, 255, 255, 0.8);
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 0px;
+    
+}
+
+.card {
+
+    aspect-ratio: 3/4;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+    background: rgba(255, 255, 255, 0.8);;
+}
+
+.face {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 2.5px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    transition:  all 400ms ease;
+}
+
+.front {
+    transform: rotateY(180deg);
+}
+
+.back {
+    background-image: url('../images/back.png');
+    backface-visibility: hidden;
+}
+
+.reveal-card {
+    transform: rotateY(180deg);
+}
+
+.disabled-card {
+    filter: saturate(0);
+    opacity: 0.5;
+}
+
+.gridLogo {
+
+    background-image: url('../images/Logo.png');
+    width: 500px;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    margin: 25px auto;
+    padding: 180px 10px 10px 0px;
+     
+}
+
+.gridCabeçalho {
+
+    background-image: url('../images/Cabeçalho Logo.png');
+    width: 500px;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    margin: 15px auto;
+    padding: 180px 10px 10px 0px;
+     
+}
+
+.reset_button {
+
+    background-color: rgba(214, 16, 16, 0.8);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.7em;
+    max-width: 180px;
+    width: 50%;
+}
+
+.login-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
